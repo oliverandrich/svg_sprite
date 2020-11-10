@@ -121,4 +121,4 @@ It also removes the "fa-" prefix, because inside the SVG sprite files the names 
 
 ## License
 
-See [License](./License.txt)
+See [License](https://github.com/oliverandrich/svg_sprite/blob/main/LICENSE.txt)
