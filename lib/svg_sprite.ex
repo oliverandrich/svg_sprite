@@ -8,9 +8,9 @@ defmodule SvgSprite do
 
   ```html
   <a href="https://facebook.com/fontawesome">
-  <svg fill="currentColor" class="w-5 h-5">
-    <use xlink:href="/images/brands.svg#facebook"></use>
-  </svg>
+    <svg fill="currentColor" class="w-5 h-5">
+      <use xlink:href="/images/brands.svg#facebook"></use>
+    </svg>
   </a>
   ```
 
@@ -18,7 +18,7 @@ defmodule SvgSprite do
 
   ```html
   <a href="https://facebook.com/fontawesome">
-  <%= icon("brands", "facebook", class: "w-5 h-5") %>
+    <%= icon("brands", "facebook", class: "w-5 h-5") %>
   </a>
   ```
 
@@ -84,14 +84,14 @@ defmodule SvgSprite do
 
   ```elixir
   config :svg_sprite,
-  base_path: "/images"
+    base_path: "/images"
   ```
 
   Of course you can also host the SVG sprites on some kind of CDN.
 
   ```elixir
   config :svg_sprite,
-  base_path: "https://cdn.mycompany.com/svg/sprites"
+    base_path: "https://cdn.mycompany.com/svg/sprites"
   ```
 
   ## Font Awesome specific features
