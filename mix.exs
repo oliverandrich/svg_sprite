@@ -5,7 +5,7 @@ defmodule SvgSprite.MixProject do
     [
       app: :svg_sprite,
       version: "0.1.0",
-      elixir: "~> 1.11",
+      elixir: "~> 1.10",
       description: description(),
       package: package(),
       deps: deps(),
