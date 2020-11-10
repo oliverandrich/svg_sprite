@@ -120,8 +120,6 @@ defmodule SvgSprite do
 
   import Phoenix.HTML.Tag
 
-  @type safe_string :: {:safe, String.t()}
-
   @base_path Application.get_env(:svg_sprite, :base_path, "/images/")
              |> String.trim_trailing("/")
 
