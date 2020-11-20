@@ -1,6 +1,12 @@
-[![Hex docs](http://img.shields.io/badge/hex.pm-docs-green.svg)](https://hexdocs.pm/svg_sprite)
-
 # SvgSprite
+
+<!-- MDOC !-->
+
+[![Module Version](https://img.shields.io/hexpm/v/svg_sprite.svg)](https://hex.pm/packages/svg_sprite)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/svg_sprite/)
+[![Total Download](https://img.shields.io/hexpm/dt/svg_sprite.svg)](https://hex.pm/packages/svg_sprite)
+[![License](https://img.shields.io/hexpm/l/svg_sprite.svg)](https://github.com/oliverandrich/svg_sprite/blob/master/LICENSE)
+[![Last Updated](https://img.shields.io/github/last-commit/oliverandrich/svg_sprite.svg)](https://github.com/oliverandrich/svg_sprite/commits/master)
 
 > Want the wonderful goodness of SVG without having the need for our SVG + JS framework at the moment? Have no fear, SVG Sprites are here. We have lovingly prepped all the icon set styles into their own SVG sprites.
 
@@ -38,7 +44,7 @@ The example above expects a file named `brands.svg` inside your `images` static 
 
 ## Installation
 
-Attrition can be installed by adding `attrition` to your list of dependencies in `mix.exs`:
+Add `:svg_sprite` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -56,28 +62,28 @@ mix deps.get
 
 ## Setup
 
-Setup for attrition can be accomplished in two easy steps!
+Setup for SvgSprite can be accomplished in two easy steps!
 
 ### 1. Import SvgSprite inside your view_helpers
 
 Of course you could add the library to every view manually by adding `import SvgSprite`. A better solution is to add it to the `view_helpers` function in inside your `application_web.ex` file.
 
 ```elixir
-  defp view_helpers do
-    quote do
-      # Use all HTML functionality (forms, tags, etc)
-      use Phoenix.HTML
+defp view_helpers do
+  quote do
+    # Use all HTML functionality (forms, tags, etc)
+    use Phoenix.HTML
 
-      # Import LiveView helpers (live_render, live_component, live_patch, etc)
-      import Phoenix.LiveView.Helpers
+    # Import LiveView helpers (live_render, live_component, live_patch, etc)
+    import Phoenix.LiveView.Helpers
 
-      # Import basic rendering functionality (render, render_layout, etc)
-      import Phoenix.View
+    # Import basic rendering functionality (render, render_layout, etc)
+    import Phoenix.View
 
-      import SvgSprite
-      ...
-    end
+    import SvgSprite
+    ...
   end
+end
 ```
 
 ### (Optional) 2. Environment Configuration
@@ -121,4 +127,4 @@ It also removes the "fa-" prefix, because inside the SVG sprite files the names 
 
 ## License
 
-See [License](https://github.com/oliverandrich/svg_sprite/blob/main/LICENSE.txt)
+This software is licensed under [MIT license](https://github.com/oliverandrich/svg_sprite/blob/main/LICENSE.txt). Copyright (c) 2020 Oliver Andrich.
